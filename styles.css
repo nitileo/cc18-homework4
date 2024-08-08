@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family:"Heebo", sans-serif;
+}
+
+body{
+    max-width: 1200px;
+    margin:auto;
+    /* background-color: rgb(163, 216, 250); */
+}
+/* header */
+header{
+    padding: 12px;
+    margin:0 auto;
+    text-align: right;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-right: 12px;
+}
+
+.current{
+    color: #FF6464;
+}
+
+.navv{
+    display: none;
+}
+/* Heros */
+.heros{
+    min-height: 400px;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+
+    padding-left:10%;
+}
+
+.heros .container{
+    width: 50%;
+    padding: 4px 8px;
+    /* border: 1px dashed; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.heros button{
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FF6464;
+    color: white;
+}
+
+.heros .photo{
+    width: 50%;
+    flex-grow: 1;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hightlight */
+.highlight{
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 24px 10%;
+    background-color: #EDF7FA;
+}
+
+.highlight .txt1{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px
+}
+
+.highlight .container{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 12px;
+}
+.txt1 p{
+    font-size: 22px;
+}
+.txt1 a{
+    text-decoration: none;
+    color:#00A8CC;
+}
+.pj1{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.pj2{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* featurework */
+.fwork{
+    padding: 24px 10%;
+}
+
+.fwork .container{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    padding: 16px 16px 16px 0;
+}
+
+.fw1{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.photo{
+    margin-right: 20px;
+}
+
+.wtt{
+    display: flex;
+    gap: 32px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.wtt p:first-child{
+    padding: 2px 8px;
+    background-color: #142850;
+    color: white;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.wtt p:last-child{
+    padding: 2px;
+    color: #8695A4;
+    font-size: 20px;
+}
+
+/* footer */
+footer{
+    margin: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+footer .container{
+    display: flex;
+    gap: 36px;
+}
+
+/* WORKPAGE */
+.fw2{
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* BLOGPAGE */
+.bpage{
+    padding: 24px 10%;
+    
+}
+
+.bpage .container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 1px solid #8695A4;
+    padding: 16px;
+    padding-left: 0;
+}
+
+.b1{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.b1 p:first-child{
+    font-size: 20px;
+}
+.bpage span{
+    color: #8695A4;
+}
+
+/* media query */
+@media(max-width:600px){
+    header nav{
+        display: none;
+    }
+
+    .navv{
+        display: flex;
+        justify-content: right;
+    }
+
+    .heros{
+        flex-direction: column-reverse;
+        justify-items: flex-end;
+        gap: 16px;
+    }
+
+    .heros .container{
+        text-align: center;
+        width: 80%;
+    }
+
+    .txt1{
+        justify-content: center;
+    }
+    .txt1 a{
+        display: none;
+    }
+
+    .highlight .container{
+        flex-direction: column;
+    }
+
+    .pj1{
+        width: 100%;
+    }
+
+    .pj2{
+        width: 100%;
+    }
+
+    .fw1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .fwork .container{
+        flex-direction: column;
+    }
+    .fwork img{
+        width: 100%;
+    }
+
+    .fwork .container2, .fwork .container3{
+        display: none;
+    }
+}
